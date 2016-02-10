@@ -1,6 +1,6 @@
 // The scripts in Eli Fieldsteel's
 // SuperCollider Tutorial: 5. Multichannel Expansion
-//"https://www.youtube.com/watch?v=fAXETAyrv8s&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC&index=6"
+//https://www.youtube.com/watch?v=fAXETAyrv8s&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC&index=6
 
 
 //create popup window with meter for different channels
