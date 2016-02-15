@@ -24,7 +24,7 @@ SynthDef.new(\sineTest, {
 	amp = LFNoise1.kr(12).exprange(0.02,1);
 	sig = SinOsc.ar(freq) * amp;
 	Out.ar(0, sig); //must define output UGen for SynthDef
-}.add;
+}).add;
 )
 //how to create Synth using a particular SynthDef
 x = Synth.new(\sineTest);

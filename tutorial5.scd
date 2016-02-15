@@ -50,12 +50,18 @@ x = {
 	amp = SinOsc.kr([7,1,2,0.2,6]).range(0,1);
 	sig = SinOsc.ar([300,500,700,900,1100]);
 	sig = sig * amp;
-
 	[Mix.new(sig),Mix.new(sig)] * 0.25; // or use dup function:
 	//Mix.new(sig).dup(2) * 0.25; //or ! is a syntactical shortcut for dup
 	//Mix.new(sig)!2 * 0.25;
-	//*OR*
-//	Splay.ar(sig) * 0.5;
+}.play;
+)
+(
+x = {
+	var sig, amp;
+	amp = SinOsc.kr([7,1,2,0.2,6]).range(0,1);
+	sig = SinOsc.ar([300,500,700,900,1100]);
+	sig = sig * amp;
+	Splay.ar(sig) * 0.5;
 }.play;
 )
 x.free;
